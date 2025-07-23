@@ -71,3 +71,83 @@ python
 -3 + (4 * 2)
 → -3 + 8
 → 5
+
+
+---
+
+## 📘 コード全文
+
+```python
+hat_height_cm = 25
+my_height_cm = 190
+total_height_meters = (hat_height_cm + my_height_cm) / 100
+print("Height in meters =", total_height_meters)
+```
+
+---
+
+## 🔍 各行の解説
+
+---
+
+### ✅ `hat_height_cm = 25`
+
+* \*\*帽子の高さ（25cm）\*\*を変数 `hat_height_cm` に代入しています。
+
+---
+
+### ✅ `my_height_cm = 190`
+
+* \*\*自分の身長（190cm）\*\*を `my_height_cm` に代入。
+* この時点で、帽子と身長の2つの値が準備できています。
+
+---
+
+### ✅ `total_height_meters = (hat_height_cm + my_height_cm) / 100`
+
+* **合計の高さ（cm）** を `(25 + 190)` で計算 → `215 cm`
+* `/ 100` で **メートルに変換**しています → `215 ÷ 100 = 2.15`
+
+#### 💡 ポイント：
+
+* Pythonでは、\*\*`/` は「小数の割り算」\*\*です（結果は float 型）。
+* もし `//` にしたら整数部分だけの「2」になります。
+
+---
+
+### ✅ `print("Height in meters =", total_height_meters)`
+
+* 文字列と変数を並べて表示します。
+* 出力結果：
+
+```text
+Height in meters = 2.15
+```
+
+---
+
+## ✅ 全体の流れまとめ
+
+| ステップ          | 処理内容                      | 結果    |
+| ------------- | ------------------------- | ----- |
+| 1. 帽子と身長を設定   | 25 + 190                  | 215cm |
+| 2. cm → m に変換 | 215 ÷ 100                 | 2.15m |
+| 3. 表示         | "Height in meters = 2.15" | ✔️    |
+
+---
+
+## 🧠 応用ポイント
+
+* 単位変換（cm → m）は**実務でもよく出る処理**です
+* `print()` で文字列と数値をつなげて表示する方法も、よく使います
+
+---
+
+## ✅ 補足（初心者向け）
+
+* `total_height_meters` の値の型は `float` です
+  　→ `type(total_height_meters)` を試すと `<class 'float'>` が返ります
+
+---
+
+
