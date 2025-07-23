@@ -48,12 +48,15 @@ int は整数型。
 
 Pythonは変数を自動で適切な型として認識してくれる（＝動的型付けと言います）。
 
-Operator	Name	Description
-a + b	Addition	Sum of a and b
-a - b	Subtraction	Difference of a and b
-a * b	Multiplication	Product of a and b
-a / b	True division	Quotient of a and b
-a // b	Floor division	Quotient of a and b, removing fractional parts
-a % b	Modulus	Integer remainder after division of a by b
-a ** b	Exponentiation	a raised to the power of b
--a	Negation	The negative of a
+| 演算子      | 名前（英語）         | 意味（日本語）               | 使用例      | 結果    |
+| -------- | -------------- | --------------------- | -------- | ----- |
+| `a + b`  | Addition       | **加算**（aとbを足す）        | `2 + 3`  | `5`   |
+| `a - b`  | Subtraction    | **減算**（aからbを引く）       | `5 - 2`  | `3`   |
+| `a * b`  | Multiplication | **乗算**（aとbをかける）       | `4 * 3`  | `12`  |
+| `a / b`  | True division  | **割り算（小数あり）**         | `7 / 2`  | `3.5` |
+| `a // b` | Floor division | **割り算（小数切り捨て）**       | `7 // 2` | `3`   |
+| `a % b`  | Modulus (mod)  | **余り（剰余）を求める**        | `7 % 2`  | `1`   |
+| `a ** b` | Exponentiation | **a の b 乗（累乗）**       | `2 ** 3` | `8`   |
+| `-a`     | Negation       | **a にマイナスをつける（符号反転）** | `-5`     | `-5`  |
+
+
